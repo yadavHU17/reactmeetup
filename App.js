@@ -29,13 +29,10 @@ const App: () => React$Node = () => {
   const [state, setState] = React.useState(false);
   return (
     <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <View style={[styles.body, {backgroundColor: state ? 'green' : 'red'}]}>
-          <Button onPress={setState.bind(this, true)} title={'Green'} />
-          <Button onPress={setState.bind(this, false)} title={'Red'} />
-        </View>
-      </SafeAreaView>
+      <View style={[styles.body, {backgroundColor: state ? 'green' : 'red'}]}>
+        <Button onPress={setState.bind(this, true)} title={'Green'} />
+        <Button onPress={setState.bind(this, false)} title={'Red'} />
+      </View>
     </>
   );
 };
