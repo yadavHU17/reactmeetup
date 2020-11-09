@@ -154,9 +154,9 @@ android {
           release {
             if (project.hasProperty('MYAPP_UPLOAD_STORE_FILE')) {
                storeFile file(MYAPP_UPLOAD_STORE_FILE)
-                storePassword project.env.APPCENTER_KEYSTORE_PASSWORD
-                keyAlias project.env.APPCENTER_KEY_ALIAS
-                keyPassword project.env.APPCENTER_KEY_PASSWORD
+               storePassword System.getProperty("APPCENTER_KEYSTORE_PASSWORD")
+               keyAlias System.getProperty("APPCENTER_KEY_ALIAS")
+               keyPassword System.getProperty("APPCENTER_KEY_PASSWORD")
             }
         }
     }
