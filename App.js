@@ -7,10 +7,8 @@
  */
 
 import React from 'react';
-import Config from "react-native-config";
 
 const App =() => {
-console.log(Config.API_URL)
  return (
     <>
     </>
