@@ -7,11 +7,11 @@
  */
 
 import React from 'react';
-
+import Config from "react-native-config";
 
 const App =() => {
-  const [] = React.useState(false);
-  return (
+console.log(Config.API_URL)
+ return (
     <>
     </>
   );
